@@ -23,7 +23,7 @@ jobs:
       matrix:
         java: [ 16, 17 ]
     steps:
-      - uses: actions/checkout@v2
+      - uses: actions/checkout@v3
       - name: Set up JDK
         uses: actions/setup-java@v2
         with:
@@ -42,7 +42,7 @@ jobs:
       matrix:
         java: [ 8, 11 ]
     steps:
-      - uses: actions/checkout@v2
+      - uses: actions/checkout@v3
       - name: Set up JDK
         uses: actions/setup-java@v2
         with:
@@ -60,7 +60,7 @@ jobs:
         os: [ ubuntu, windows ]
         java: [ 8.0.192, 8, 11.0.3, 11, 16, 17 ]
     steps:
-    - uses: actions/checkout@v2
+    - uses: actions/checkout@v3
     - name: Set up JDK
       uses: actions/setup-java@v2
       with:
